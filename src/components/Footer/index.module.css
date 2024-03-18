@@ -1,0 +1,37 @@
+.footer {
+    line-height: 1.4;
+    background: #101010;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer__container {
+    display: grid;
+    align-items: center;
+    grid-template-areas: 'developer logo' 'copyright logo';
+    gap: 36px;
+}
+.footer__developer,
+.footer__copyright {
+    font-size: 16px;
+    line-height: 140%;
+}
+.footer__developer {
+    grid-area: developer;
+}
+
+.footer__copyright {
+    grid-area: copyright;
+}
+.footer__link {
+    grid-area: logo;
+    justify-self: end;
+    align-self: end;
+}
+.footer__logo {
+    width: 287px;
+}
+
+.footer__link_orange:hover {
+    color: var(--second-orange-color);
+}
