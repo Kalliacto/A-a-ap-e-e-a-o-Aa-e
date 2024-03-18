@@ -35,3 +35,35 @@
 .footer__link_orange:hover {
     color: var(--second-orange-color);
 }
+@media (max-width: 900px) {
+    .footer {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    .footer__logo {
+        max-width: 217px;
+    }
+}
+
+@media (max-width: 520px) {
+    .footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .footer__container {
+        display: grid;
+        align-items: center;
+        grid-template-areas:
+            'logo'
+            'developer'
+            'copyright';
+        gap: 20px;
+    }
+    .footer__link {
+        justify-self: start;
+    }
+    .footer__developer,
+    .footer__copyright {
+        font-size: 12px;
+    }
+}

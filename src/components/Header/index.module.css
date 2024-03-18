@@ -15,22 +15,25 @@
 .header__link {
     display: block;
 }
-.link_show_trailer {
-    border-radius: 52px;
-    padding: 14px 20px;
-    font-weight: 600;
-    font-size: 14px;
-    text-transform: uppercase;
-    text-align: center;
-    background-color: var(--main-orange-color);
-    border: 1px solid transparent;
-    outline: none;
-}
-.link_show_trailer:hover {
-    background-color: var(--second-orange-color);
+@media (max-width: 900px) {
+    .header__container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .header__logo {
+        width: 130px;
+    }
 }
 
-.link_show_trailer:focus {
-    border-color: var(--white-color);
-    background-color: var(--second-orange-color);
+@media (max-width: 520px) {
+    .header__container {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    .header__link {
+        display: none;
+    }
+    .header__logo {
+        width: 80px;
+    }
 }

@@ -6,10 +6,10 @@ import Logo from '../../assets/img/logo.svg';
 const Header = ({ className }) => {
     return (
         <header className={s.header} id='logo'>
-            <div className={cn(s.header__container, className)}>
+            <div className={cn(s.header__container, className[0])}>
                 <img className={s.header__logo} src={Logo} alt='Logo - ПРО КИНО' />
-                <a className={cn(s.header__link, s.link_show_trailer)} href='#trailer'>
-                    Смотреть трейлер{' '}
+                <a className={cn(s.header__link, className[1])} href='#trailer'>
+                    Смотреть трейлер
                 </a>
             </div>
         </header>

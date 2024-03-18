@@ -1,0 +1,99 @@
+.about {
+    padding: 60px 0;
+}
+.about__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.about__content {
+    flex-basis: 750px;
+}
+.about__title {
+    font-weight: 600;
+    font-size: 52px;
+    margin-bottom: 32px;
+}
+.about__description {
+    font-size: 20px;
+    line-height: 150%;
+}
+.about__container::after {
+    content: '';
+    display: block;
+    flex-basis: 530px;
+    background-image: url('../../assets/img/aang.jpg');
+    background-image: -webkit-image-set(
+        url('../../assets/img/aang@2x.avif') type('image/avif') 2x,
+        url('../../assets/img/aang.avif') type('image/avif') 1x,
+        url('../../assets/img/aang@2x.webp') type('image/webp') 2x,
+        url('../../assets/img/aang.webp') type('image/webp') 1x,
+        url('../../assets/img/aang@2x.jpg') 2x,
+        url('../../assets/img/aang.jpg') 1x
+    );
+    background-image: image-set(
+        url('../../assets/img/aang@2x.avif') type('image/avif') 2x,
+        url('../../assets/img/aang.avif') type('image/avif') 1x,
+        url('../../assets/img/aang@2x.webp') type('image/webp') 2x,
+        url('../../assets/img/aang.webp') type('image/webp') 1x,
+        url('../../assets/img/aang@2x.jpg') 2x,
+        url('../../assets/img/aang.jpg') 1x
+    );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@media (max-width: 1080px) {
+    .about {
+        padding: 50px 0;
+    }
+    .about__container::after {
+        flex-basis: 40%;
+    }
+    .about__content {
+        flex-basis: 60%;
+    }
+    .about__title {
+        font-size: 52px;
+        margin-bottom: 32px;
+    }
+    .about__description {
+        font-size: 20px;
+    }
+}
+@media (max-width: 900px) {
+    .about {
+        padding: 40px 0;
+    }
+    .about__container {
+        flex-direction: column;
+    }
+    .about__content {
+        flex-basis: auto;
+    }
+    .about__container::after {
+        flex-basis: 300px;
+        background: url('../../assets/img/aang768.jpg') no-repeat center cover;
+    }
+    .about__title {
+        max-width: 370px;
+        font-size: 40px;
+        margin-bottom: 24px;
+    }
+    .about__description {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 520px) {
+    .about {
+        padding: 20px 0;
+    }
+    .about__container::after {
+        background: url('../../assets/img/aang320.jpg') no-repeat center cover;
+    }
+    .about__title {
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+}
