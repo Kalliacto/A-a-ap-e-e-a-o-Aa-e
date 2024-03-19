@@ -1,0 +1,19 @@
+.gallery {
+    user-select: none;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.gallery__container {
+    margin-bottom: 5px;
+    position: relative;
+}
+.gallery__navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 3;
+    transform: translate(-50%, 0);
+}
+.gallery__previewList {
+    margin: 0 auto;
+}
