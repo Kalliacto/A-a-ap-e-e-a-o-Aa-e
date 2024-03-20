@@ -7,7 +7,7 @@ import MainPhoto from './MainPhoto';
 import photos from '../../assets/shotsForGallery/shotsForGallery.json';
 
 const Gallery = ({ className }) => {
-    const [indexActivePhoto, setIndexActivePhoto] = useState(2);
+    const [indexActivePhoto, setIndexActivePhoto] = useState(0);
     const activePhoto = photos[indexActivePhoto];
     const prevPhoto = photos[indexActivePhoto - 1];
     const nextPhoto = photos[indexActivePhoto + 1];
@@ -28,7 +28,12 @@ const Gallery = ({ className }) => {
                     }}
                 />
             </div>
-            <PreviewGallery indexActivePhoto={indexActivePhoto} photos={photos} className={s.gallery__previewList} />
+            <PreviewGallery
+                setIndexActivePhoto={setIndexActivePhoto}
+                indexActivePhoto={indexActivePhoto}
+                photos={photos}
+                className={s.gallery__previewList}
+            />
         </div>
     );
 };
