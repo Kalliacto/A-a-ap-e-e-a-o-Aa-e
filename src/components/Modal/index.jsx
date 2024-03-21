@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './index.module.css';
+import GalleryNavigation from '../Gallery/GalleryNavigation';
 
 const Modal = ({ isVisible = false, content, setModal }) => {
     const onClose = () => {

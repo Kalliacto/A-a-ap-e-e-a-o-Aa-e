@@ -13,7 +13,7 @@ const Gallery = ({ className }) => {
     const nextPhoto = photos[indexActivePhoto + 1];
 
     return (
-        <div className={cn(s.gallery, className)}>
+        <section className={cn(s.gallery, className)}>
             <div className={s.gallery__container}>
                 <MainPhoto prevPhoto={prevPhoto} activePhoto={activePhoto} nextPhoto={nextPhoto} />
                 <GalleryNavigation
@@ -34,7 +34,7 @@ const Gallery = ({ className }) => {
                 photos={photos}
                 className={s.gallery__previewList}
             />
-        </div>
+        </section>
     );
 };
 

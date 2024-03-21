@@ -1,0 +1,17 @@
+.video__btn {
+    color: var(--white-color);
+    border-radius: 8px;
+    padding: 14px 20px;
+    background-color: var(--second-black-color);
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: background-color 0.4s;
+}
+.video__btn:hover,
+.video__btn:focus {
+    background-color: var(--second-orange-color);
+}
+.video__btn_active {
+    background-color: var(--main-orange-color);
+}

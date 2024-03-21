@@ -17,6 +17,7 @@
 .about__description {
     font-size: 20px;
     line-height: 150%;
+    text-align: justify;
 }
 .about__container::after {
     content: '';
