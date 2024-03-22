@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import s from './index.module.css';
-import GalleryNavigation from '../Gallery/GalleryNavigation';
 
 const Modal = ({ isVisible = false, content, setModal }) => {
     const onClose = () => {
@@ -20,6 +19,10 @@ const Modal = ({ isVisible = false, content, setModal }) => {
         document.addEventListener('keydown', keydownHandler);
         return () => document.removeEventListener('keydown', keydownHandler);
     });
+
+    useEffect(() => {
+        document.body.style.overflow = isVisible ? 'hidden' : 'unset';
+    }, [isVisible]);
 
     return !isVisible ? null : (
         <div className={s.modal} onClick={onClose}>

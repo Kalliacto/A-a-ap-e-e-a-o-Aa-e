@@ -15,3 +15,9 @@
 .video__btn_active {
     background-color: var(--main-orange-color);
 }
+@media (max-width: 520px) {
+    .video__btn {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+}

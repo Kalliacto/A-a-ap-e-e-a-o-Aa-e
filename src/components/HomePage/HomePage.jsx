@@ -12,9 +12,9 @@ const HomePage = (props) => {
             <Header className={['container', 'link_show_trailer']} />
             <main>
                 <Hero className={['container', 'link_show_trailer']} />
-                {/* TODO: Добавить блок с инфо по актерам или еще чем */}
-                <Gallery className={'container'} />
                 <About className={'container'} />
+                <Gallery className={'container'} />
+                {/* TODO: Добавить блок с инфо по актерам или еще чем */}
                 <Videos className={'container'} />
             </main>
             <Footer className={'container'} />
