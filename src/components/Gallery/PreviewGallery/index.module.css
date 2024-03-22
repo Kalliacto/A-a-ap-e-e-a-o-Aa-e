@@ -50,7 +50,7 @@
     object-fit: cover;
 }
 @media only screen and (max-width: 628px) {
-    .preview__gallery_preview {
+    .preview__gallery {
         display: none;
     }
 }

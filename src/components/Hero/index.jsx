@@ -12,7 +12,7 @@ const Hero = ({ className }) => {
                 <p className={s.hero__date}>
                     <time dateTime='2024-02-22'>22 Февраля</time>
                 </p>
-                <a className={cn(s.hero__link, className[1])} href='#trailer'>
+                <a className={cn(s.hero__link, className[1])} href='#video'>
                     Смотреть трейлер
                 </a>
                 <a className={s.hero__arrow} href='#about'>
